@@ -1,0 +1,46 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.header-container {
+    grid-column: 1/6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+    height: 100px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    width: 450px;
+}
+nav {
+    width: 50%;
+    max-width: 450px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li {
+    list-style: none;
+}
+.hamburger-btn {
+    height: 70%;
+    width: auto;
+}
+.sidebar {
+    grid-row: 2/3;
+}
