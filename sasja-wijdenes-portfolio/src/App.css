@@ -10,6 +10,10 @@
     grid-template-columns: repeat(5, 1fr);
 }
 
+main {
+    grid-column: 1/6;
+}
+
 .header-container {
     grid-column: 1/6;
     display: flex;
@@ -25,22 +29,46 @@ header {
     border: 1px solid red;
     width: 450px;
 }
-nav {
-    width: 50%;
-    max-width: 450px;
-}
 nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 nav li {
     list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav-link {
+    width: 100%;
+    margin-block: 10px;
 }
 .hamburger-btn {
     height: 70%;
     width: auto;
 }
 .sidebar {
+    grid-column: -5/-1;
+    width: 80vw;
+    background-color: blueviolet;
+    z-index: 5;
+}
+.sidebar, main {
     grid-row: 2/3;
+}
+
+@media screen and (min-width: 750px) {
+    nav {
+        width: fit-content;
+    }
+    .nav-link {
+        margin: 10px;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    nav li {
+        width: fit-content;
+    }
 }

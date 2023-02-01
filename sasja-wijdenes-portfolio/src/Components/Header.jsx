@@ -29,7 +29,7 @@ const Header = () => {
             : <CgMenuRight className="hamburger-btn" onClick={toggleSidebar} />
         }
         </div>
-        {(showSidebar) && <Sidebar />}
+        {(showSidebar && screenWidth < 750) && <Sidebar />}
     </>)
 }
 

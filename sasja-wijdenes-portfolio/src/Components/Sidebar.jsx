@@ -1,8 +1,9 @@
+import Nav from "./Nav"
 
 
 const Sidebar = () => {
     return (<div className="sidebar">
-        <h1>Sidebar</h1>
+        <Nav />
     </div>)
 }
 
