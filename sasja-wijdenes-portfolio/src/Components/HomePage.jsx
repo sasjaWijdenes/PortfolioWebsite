@@ -1,8 +1,8 @@
-
+import profilePic from '../images/profilePic.jpg'
 
 const HomePage = () => {
-    return (<div>
-        <img src="/src/images/profilePic.jpg" alt="hansome young man" />
+    return (<div className='img-cont'>
+        <img src={profilePic} alt="hansome young man" />
     </div>)
 }
 
