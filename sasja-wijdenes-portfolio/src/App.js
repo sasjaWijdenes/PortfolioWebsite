@@ -6,6 +6,7 @@ import SkillsPage from './Components/SkillsPage';
 import WorkHistoryPage from './Components/WorkHistoryPage';
 import PortfolioPiecesPage from './Components/PortfolioPiecesPage';
 import ContactMePage from './Components/ContactMePage';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route exact path='/contact' element={<ContactMePage />} />
           </Routes>  
         </main>
+        <Footer />
       </BrowserRouter>
     </div>
   );

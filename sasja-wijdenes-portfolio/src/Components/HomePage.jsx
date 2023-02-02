@@ -1,9 +1,9 @@
 
 
 const HomePage = () => {
-    return (<>
-        <h1>Home Page</h1>
-    </>)
+    return (<div>
+        <img src="/src/images/profilePic.jpg" alt="hansome young man" />
+    </div>)
 }
 
 export default HomePage
